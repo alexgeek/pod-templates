@@ -5,7 +5,7 @@ pipeline {
     skipDefaultCheckout true
   }
   stages {
-    stage('Test-linux') {
+    /*stage('Test-linux') {
       agent {
         kubernetes {
           label 'nodejs-pod'
@@ -19,7 +19,7 @@ pipeline {
           sh 'node --version'
         }
       }
-    }
+    }*/
     stage('Test-windows') {
       agent {
         kubernetes {
